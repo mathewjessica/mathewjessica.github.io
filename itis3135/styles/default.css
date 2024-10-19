@@ -7,14 +7,19 @@ body{
 
 a {
     color: cornsilk;
-    /* text-decoration: none; */
+    text-decoration: none;
 }
 
 a:hover {
     color: blueviolet;
-    text-decoration: line;
 }
+
 main{
     text-align: left;
-    margin-left: 2
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h2{
+    text-align: center;
 }
