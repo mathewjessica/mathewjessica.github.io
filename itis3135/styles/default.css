@@ -16,10 +16,17 @@ a:hover {
 
 main{
     text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 0 auto;
 }
 
 h2{
     text-align: center;
+}
+
+img{
+    width: 60%;
+}
+figure{
+    text-align: center;
+    font-style: italic;
 }
