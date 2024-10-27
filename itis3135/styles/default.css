@@ -37,6 +37,14 @@ h2{
 img{
     width: 35%;
     height: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid rgb(224, 216, 216);
+}
+
+#cookie{
+    width: 35%;
+    height: 35%;
     display: block;
     margin-left: auto;
     margin-right: auto;
