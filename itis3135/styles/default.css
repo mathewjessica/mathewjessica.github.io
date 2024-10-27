@@ -36,8 +36,17 @@ h2{
 
 img{
     width: 35%;
+    height: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid rgb(224, 216, 216);
 }
+
 figure{
     text-align: center;
     font-style: italic;
+}
+p{
+    text-align: center;
 }
