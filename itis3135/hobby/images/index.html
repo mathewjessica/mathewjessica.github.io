@@ -51,6 +51,14 @@
             font-style: italic;
             font-size: 12px;
         }
+
+        section {
+            display: none;
+        }
+
+        #home {
+            display: block;
+        }
     </style>
 </head>
 
@@ -58,13 +66,13 @@
     <header>
         <h1>Jessica Mathew Photography</h1>
         <nav>
-            <a href="#home">Home</a> ||
-            <a href="#about">About Me</a> ||
-            <a href="#best">Best Shots</a> ||
-            <a href="#locations">Locations</a> ||
-            <a href="#why">Why Choose Me?</a> ||
-            <a href="#how">Contact</a> ||
-            <a href="AI">AI Prompts</a>
+            <a href="#home" onclick="showSection('home')">Home</a> |
+            <a href="#about" onclick="showSection('about')">About Me</a> |
+            <a href="#best" onclick="showSection('best')">Best Shots</a> |
+            <a href="#locations" onclick="showSection('locations')">Locations</a> |
+            <a href="#why" onclick="showSection('why')">Why Choose Me?</a> |
+            <a href="#how" onclick="showSection('how')">Contact</a> |
+            <img src="favicon.ico" alt="Divider Icon" style="width:16px; height:16px;">
         </nav>
     </header>
 
@@ -72,6 +80,10 @@
         <section id="home">
             <h2>Welcome to My Portfolio</h2>
             <p>Where Photography meets Creativity</p>
+            <figure>
+                <img src="../images/jessie.jpeg" id="jessie" alt="Jessica_Mathew">
+                <figcaption>Jessica on the Camera</figcaption>
+            </figure>
         </section>
 
         <section id="about">
@@ -136,15 +148,9 @@
         <section id="how">
             <h2>Contact Me</h2>
             <figure>
-                <!-- Embed the YouTube video here -->
-                <iframe width="560" height="315"
-                    src="https://www.youtube.com/watch?v=AFSLKbA9yvg&ab_channel=JessicaMathew"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AFSLKbA9yvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </figure>
-            <p>Are you interested in booking a sessions? Or want to talk about photography? Send me a message and I will
-                get back to you as soon as I can.</p>
+            <p>Are you interested in booking a session? Or want to talk about photography? Send me a message and I will get back to you as soon as I can.</p>
             <form>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name">
@@ -199,6 +205,22 @@
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/check/referer");
     </script>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-</body>
 
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('main section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            const activeSection = document.getElementById(sectionId);
+            activeSection.style.display = 'block';
+        }
+    
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('home');
+        });
+    </script>
+
+</body>
 </html>
