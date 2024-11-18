@@ -43,11 +43,13 @@ p{
     height: 31px;
 }
 
-.leadership{
+.leadership {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
 }
+
 
 .leader {
     display: flex;
