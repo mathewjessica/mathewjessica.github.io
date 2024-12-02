@@ -256,7 +256,6 @@
                 'ai-link': 'ai'
             };
 
-            // Function to show the selected section and hide others
             function showSection(sectionId) {
                 sections.forEach((section) => {
                     section.style.display = 'none';
@@ -264,7 +263,6 @@
                 document.getElementById(sectionId).style.display = 'block';
             }
 
-            // Add click event listeners to each nav link
             Object.keys(navLinks).forEach((linkId) => {
                 const sectionId = navLinks[linkId];
                 document.getElementById(linkId).addEventListener('click', (event) => {
