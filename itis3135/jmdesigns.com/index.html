@@ -8,13 +8,16 @@
 
     <style>
         body {
-            font-family:bondiModa;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: bondiModa;
             line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #492C1D;
-            background: linear-gradient(135deg, #704d3c, #A288A6); 
-            color: #333; 
+            background: linear-gradient(135deg, #704d3c, #A288A6);
+            color: #333;
         }
 
         header {
@@ -33,22 +36,14 @@
             width: 60px;
         }
 
-        header h1 {
-            font-size: 2rem;
-        }
-
         main {
+            flex: 1;
             padding: 20px;
             max-width: 800px;
-            margin: auto;
+            margin: 20px auto;
             background: #e6e1d2;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 15px;
-        }
-
-        ul {
-            list-style: disc inside;
-            padding-left: 20px;
         }
 
         footer {
@@ -56,6 +51,7 @@
             padding: 10px;
             background-color: #492C1D;
             color: #FAF9F6;
+            margin-top: auto;
         }
 
         footer p {
@@ -67,10 +63,12 @@
             font-style: normal;
         }
     </style>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
- 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
@@ -113,16 +111,14 @@
     <footer>
         <p>&copy; 2024 J.M. Designs | "Your Brand, Perfectly Crafted"</p>
 
-</body>
 
-</html>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"> </script>
 
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"> </script>
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/check/referer");
+        </script>
 
-    <script>
-        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
-        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/check/referer");
-    </script>
     </footer>
 
 </body>
