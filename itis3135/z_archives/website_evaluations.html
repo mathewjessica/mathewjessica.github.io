@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Evaluations</title>
+    <link rel="stylesheet" href="../styles/default.css">
+</head>
+
+<body>
+    <header>
+        <div data-include="../components/header.html"></div>
+    </header> 
+
+    <main>
+        <h2>Website Evaluations</h2>
+
+        <section>
+            <h3><a href="apple.com" target="_blank">Good Website</a></h3>
+            <p>Apple.com is a website showcasing Apple's products and services with a focus on innovation and design.</p>
+            <ul>
+                <li><strong>Contrast:</strong> The site uses bold visuals and ample white space to make text and products stand out clearly.</li>
+                <li><strong>Repetition:</strong> Consistent fonts, colors, and layouts unify the design and reinforce Apple’s branding.</li>
+                <li><strong>Alignment:</strong> Perfect alignment of text, images, and buttons creates a clean and professional layout.</li>
+                <li><strong>Proximity:</strong> Related elements, like product images and descriptions, are grouped logically for easy navigation.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3><a href="https://www.example-badwebsite.com" target="_blank">Bad Website</a></h3>
+            <p>Suzanne Collins' official website, suzannecollinsbooks.com, serves as a platform to showcase her literary works and provide updates to fans.</p>
+            <ul>
+                <li><strong>Contrast:</strong> The website's use of low-contrast text against similar backgrounds makes reading difficult, reducing overall readability.</li>
+                <li><strong>Repetition:</strong> Inconsistent font styles and varying design elements across pages disrupt visual harmony and weaken brand identity.</li>
+                <li><strong>Alignment:</strong> Misaligned text and images create a disorganized appearance, detracting from the site's professionalism.</li>
+                <li><strong>Proximity:</strong> Poor spacing between related content leads to a cluttered layout, making it challenging for users to navigate and locate information efficiently.</li>
+            </ul>
+        </section>
+    </main>    
+
+    <footer>
+        <div data-include="../components/footer.html"></div>
+    </footer>
+
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"> </script>
+    <script>
+        document.getElementById("validation-link-html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation-link-css").setAttribute("href", "https://jigsaw.w3.org/css-validator/check/referer");
+    </script>
+    <script src="../scripts/HTMLInclude.min.js"></script>
+</body>
+
+</html>
