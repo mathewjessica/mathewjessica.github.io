@@ -1,9 +1,7 @@
-// Show alert to test script inclusion
 function scriptTest() {
     alert("Hey my script is running");
 }
 
-// Display the current time, day, and date
 function showCurrentDate() {
     const now = new Date();
     const options = { weekday: "long", year: "numeric", month: "long", day: "numeric", hour: "2-digit", minute: "2-digit" };
@@ -11,7 +9,7 @@ function showCurrentDate() {
     document.getElementById("current-date").textContent = `Today is ${formattedDate}`;
 }
 
-// Greet user based on input
+
 function greetUser() {
     const name = document.getElementById("user-name").value;
     const mood = document.getElementById("user-mood").value;
@@ -19,7 +17,6 @@ function greetUser() {
     document.getElementById("greeting-message").textContent = greeting;
 }
 
-// Show polygon name
 function showPolygon() {
     const num = Math.abs(Math.round(parseFloat(document.getElementById("favorite-number").value)));
     const polygons = ["monogon", "digon", "triangle", "quadrilateral", "pentagon", "hexagon", "heptagon", "octagon", "nonagon", "decagon"];
@@ -30,7 +27,6 @@ function showPolygon() {
     }
 }
 
-// Fun functions for Jolly Mongoose
 function bakeSavoryCookie() {
     alert("The Jolly Mongoose baked a savory cookie just for you!");
 }
@@ -62,5 +58,5 @@ function recommendCookie() {
     alert(`We recommend trying our ${cookies[Math.floor(Math.random() * cookies.length)]}!`);
 }
 
-// Initialize date display
+
 document.addEventListener("DOMContentLoaded", showCurrentDate);
