@@ -66,8 +66,8 @@ table {
 }
 
 th {
-    background-color: #4C3A51; /* Dark purple for header */
-    color: cornsilk; /* Light text for header */
+    background-color: #4C3A51; 
+    color:cornsilk; 
     font-size: 1rem;
     text-align: center;
     padding: 10px;
@@ -79,15 +79,15 @@ td {
 }
 
 tr:nth-child(even) {
-    background-color: #6E5773; /* Lighter purple for even rows */
+    background-color: #6E5773; 
 }
 
 tr:nth-child(odd) {
-    background-color: #A288A6; /* Default background for odd rows */
+    background-color: #A288A6; 
 }
 
 tr:hover {
-    background-color: #523A50; /* Slightly darker purple on hover */
+    background-color: #523A50; 
     color: cornsilk;
 }
 
@@ -95,9 +95,8 @@ td:first-child {
     text-align: center;
 }
 
-/* Last Row for Totals */
 tr:last-child th {
-    background-color: #333; /* Dark background for totals */
+    background-color: #333; 
     color: white;
 }
 
@@ -110,7 +109,6 @@ caption {
     color: cornsilk;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     table {
         font-size: 14px;
