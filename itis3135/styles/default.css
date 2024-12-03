@@ -147,6 +147,10 @@ input, select, button {
     margin-bottom: 15px;
 }
 
-section h3 a:hover {
-    color: #FFD700; 
+.good-website-link:hover {
+    color: #0b662e; 
+}
+
+.bad-website-link:hover {
+    color: #a82418; 
 }
