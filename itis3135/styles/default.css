@@ -118,3 +118,33 @@ caption {
         padding: 8px;
     }
 }
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #6E5773; 
+    border-radius: 5px;
+    color: cornsilk;
+    font-family: Tahoma, sans-serif;
+}
+
+button {
+    background-color: #333; 
+    color: cornsilk; 
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #523A50; 
+}
+
+input, select, button {
+    margin-bottom: 15px;
+}
+
+
