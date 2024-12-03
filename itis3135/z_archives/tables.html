@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessica Mathew's Jolly Mongoose || ITIS Contract</title>
+    <link rel="stylesheet" href="../styles/default.css">
+</head>
+
+<body>
+    <header>
+        <div data-include="../components/header.html"></div>
+    </header> 
+
+    <main>
+        <h2>HTML Tables</h2>
+
+        <h3>My Tabular Data</h3>
+        <ol>
+            <li>Lorelai Gilmore, lorelai@gmail.com, 8 years</li>
+            <li>Rory Gilmore, rory@gmail.com, 2 years</li>
+            <li>Luke Danes, luke@gmail.com, 4 years</li>
+            <li>Sookie St. James, sookie@gmail.com, 3 years</li>
+            <li>Emily Gilmore, emily@gmail.com, 7 years</li>
+            <li>Richard Gilmore, richard@gmail.com, 1 year</li>
+            <li>Kirk Gleason, kirk@gmail.com, 0 years</li>
+        </ol>
+
+        <h3>Employee Data in Simple Table</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>Lorelai Gilmore</td>
+                <td>lorelai@gmail.com</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Rory Gilmore</td>
+                <td>rory@gmail.com</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Luke Danes</td>
+                <td>luke@gmail.com</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Sookie St. James</td>
+                <td>sookie@gmail.com</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Emily Gilmore</td>
+                <td>emily@gmail.com</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Richard Gilmore</td>
+                <td>richard@gmail.com</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Kirk Gleason</td>
+                <td>kirk@gmail.com</td>
+                <td>0</td>
+            </tr>
+        </table>
+
+        <h3>Employee Data in Complex Table</h3>
+        <figure>
+            <figcaption>Employee Information</figcaption>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                    <th>Monthly Salary</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Management</td>
+                    <td>Lorelai Gilmore</td>
+                    <td>lorelai@gmail.com</td>
+                    <td>8</td>
+                    <td>$8,000</td>
+                </tr>
+                <tr>
+                    <td>Rory Gilmore</td>
+                    <td>rory@gmail.com</td>
+                    <td>2</td>
+                    <td>$4,000</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Staff</td>
+                    <td>Luke Danes</td>
+                    <td>luke@gmail.com</td>
+                    <td>4</td>
+                    <td>$6,500</td>
+                </tr>
+                <tr>
+                    <td>Sookie St. James</td>
+                    <td>sookie@gmail.com</td>
+                    <td>3</td>
+                    <td>$5,000</td>
+                </tr>
+                <tr>
+                    <td>Emily Gilmore</td>
+                    <td>emily@gmail.com</td>
+                    <td>7</td>
+                    <td>$3,000</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Interns</td>
+                    <td>Richard Gilmore</td>
+                    <td>richard@gmail.com</td>
+                    <td>1</td>
+                    <td>$7,000</td>
+                </tr>
+                <tr>
+                    <td>Kirk Gleason</td>
+                    <td>kirk@gmail.com</td>
+                    <td>0</td>
+                    <td>$4,500</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Total Years of Service</th>
+                    <td>25</td>
+                    <td>$38,000</td>
+                </tr>
+            </table>
+        </figure>
+
+    </main>
+
+    <footer>
+        <div data-include="../components/footer.html"></div>
+    </footer>
+
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"> </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/check/referer");
+    </script>
+    <script src="../scripts/HTMLInclude.min.js"></script>
+</body>
+
+</html>
