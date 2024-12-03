@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessica Mathew's Jolly Mongoose || ITIS Contract</title>
+    <link rel="stylesheet" href="../styles/default.css">
+</head>
+
+<body>
+    <header>
+        <div data-include="../components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>First Scripts</h2>
+        <h3 id="current-date"></h3>
+
+        <form id="user-input-form">
+            <label for="user-name">Enter your name:</label>
+            <input type="text" id="user-name" required>
+
+            <label for="user-mood">How are you feeling today?</label>
+            <input type="text" id="user-mood" required>
+
+            <button type="button" onclick="greetUser()">Submit</button>
+        </form>
+
+        <h3 id="greeting-message"></h3>
+
+        <label for="favorite-number">Enter your favorite number (0-10):</label>
+        <input type="number" id="favorite-number" step="any">
+        <button type="button" onclick="showPolygon()">Find Polygon</button>
+
+        <h3>Jolly Mongoose Fun Functions</h3>
+        <button onclick="bakeSavoryCookie()">Bake a Savory Cookie</button>
+        <button onclick="randomCookieFact()">Random Cookie Fact</button>
+        <button onclick="mongooseAdventure()">Mongoose Adventure</button>
+        <button onclick="cookieTrivia()">Cookie Trivia</button>
+        <button onclick="recommendCookie()">Recommend a Cookie</button>
+    </main>
+
+    <footer>
+        <div data-include="../components/footer.html"></div>
+        <a id="validation-link-html" href="#">HTML Validator</a>
+        <a id="validation-link-css" href="#">CSS Validator</a>
+    </footer>
+
+    <script src="../scripts/defaultscripts.js"></script>
+    <script src="../scripts/HTMLInclude.min.js"></script>
+    <script>
+        document.getElementById("validation-link-html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation-link-css").setAttribute("href", "https://jigsaw.w3.org/css-validator/check/referer");
+    </script>
+</body>
+
+</html>
