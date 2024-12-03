@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THIS IS THE WORST PAGE EVER</title>
+    <style>
+        /* Awful inline styles */
+        body {
+            background-color: white;
+            color: black;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .papyrus {
+            font-family: 'Papyrus', fantasy;
+        }
+
+        .comic-sans {
+            font-family: 'Comic Sans MS', cursive;
+        }
+
+        .times {
+            font-family: 'Times New Roman', serif;
+        }
+
+        .ugly-border {
+            border-top: 10px solid red;
+            border-right: 15px dashed green;
+            border-bottom: 20px dotted blue;
+            border-left: 25px double yellow;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        .huge-text {
+            font-size: 50px;
+        }
+
+        .poor-contrast {
+            color: #aaaaaa;
+            background-color: #bbbbbb;
+        }
+
+        .underlined {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is an H2 before an H1</h2>
+    <h1>This is an H1 after an H2</h1>
+
+    <p class="center-text huge-text">This is a centered paragraph with huge text.</p>
+
+    <ul style="text-align: center;">
+        <li>Centered bullet</li>
+        <li>Another centered bullet</li>
+    </ul>
+
+    <p style="font-family: Papyrus; font-size: 20px;">This is text in Papyrus font.</p>
+    <p style="font-family: 'Comic Sans MS'; font-size: 20px;">This is text in Comic Sans font.</p>
+    <p style="font-family: 'Times New Roman'; font-size: 20px;">This is text in Times New Roman font.</p>
+
+    <p style="font-size: 14px;" class="poor-contrast">
+        ZooWeEMAMA <span class="underlined">This text is underlined but not a link.</span>
+    </p>
+
+    <img src="https://example.com/stuff/bigpicture" alt="A meaningless big picture"
+        style="width: 400px; height: 400px;">
+
+    <p class="center-text ugly-border" style="margin-left: 10px; margin-right: 100px;">
+        ugh this is brainrot
+    </p>
+
+    <a href="https://example.com">A default link</a>
+
+    <p style="margin: 50px 0;">Extra blank lines below this.</p>
+
+
+    <p style="margin-bottom: 100px;"></p>
+    <p style="margin-bottom: 100px;"></p>
+
+</body>
+<footer>
+    <div data-include="components/footer.html"></div>
+</footer>
+
+<script>
+    document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/check/referer");
+</script>
+<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+<script src="scripts/HTMLInclude.min.js"></script>
+
+</html>

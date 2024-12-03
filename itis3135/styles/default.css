@@ -1,9 +1,10 @@
-body{
+body {
     background-color: #A288A6;
     color: rgb(224, 216, 216);
     font-family: Tahoma;
     text-align: center;
 }
+
 #validation-link-html img {
     border: 0;
     width: 88px;
@@ -25,16 +26,18 @@ a:hover {
     color: blueviolet;
 }
 
-main{
-    text-align: left;
+main {
+    max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
+    text-align: left;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
-img{
+img {
     width: 35%;
     margin-left: auto;
     margin-right: auto;
@@ -42,7 +45,7 @@ img{
     box-sizing: border-box;
 }
 
-#cookie{
+#cookie {
     width: 35%;
     display: block;
     margin-left: auto;
@@ -50,13 +53,16 @@ img{
     border: 3px solid rgb(224, 216, 216);
     box-sizing: border-box;
 }
-figure{
+
+figure {
     text-align: center;
     font-style: italic;
 }
-p{
+
+p {
     text-align: center;
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -67,7 +73,7 @@ table {
 
 th {
     background-color: #4C3A51; 
-    color:cornsilk; 
+    color: cornsilk; 
     font-size: 1rem;
     text-align: center;
     padding: 10px;
@@ -100,23 +106,11 @@ tr:last-child th {
     color: white;
 }
 
-
-
 caption {
     font-weight: bold;
     font-size: 1.2rem;
     margin-bottom: 10px;
     color: cornsilk;
-}
-
-@media (max-width: 768px) {
-    table {
-        font-size: 14px;
-    }
-
-    th, td {
-        padding: 8px;
-    }
 }
 
 form {
@@ -153,4 +147,39 @@ input, select, button {
 
 .bad-website-link:hover {
     color: #a82418; 
+}
+
+@media (min-width: 981px) {
+    main {
+        width: 80%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 980px) {
+    main {
+        width: 90%;
+        max-width: 800px;
+    }
+    img {
+        width: 50%;
+    }
+    table {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+        max-width: none;
+    }
+    img {
+        width: 80%;
+    }
+    table {
+        font-size: 14px;
+    }
+    th, td {
+        padding: 6px;
+    }
 }
