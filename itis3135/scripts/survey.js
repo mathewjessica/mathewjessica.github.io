@@ -1,11 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("introForm");
-    const addCourseBtn = document.getElementById("addCourse");
     const coursesDiv = document.getElementById("courses");
+    const addCourseBtn = document.getElementById("addCourse");
 
-    // Add course input field
-    addCourseBtn.addEventListener("click", function () {
+    // Function to create and add a course input field
+    function addCourseField() {
         const courseDiv = document.createElement("div");
+        courseDiv.classList.add("course-entry"); // Optional, for styling
+
         const courseInput = document.createElement("input");
         courseInput.type = "text";
         courseInput.name = "courses[]";
@@ -22,13 +24,16 @@ document.addEventListener("DOMContentLoaded", function () {
         courseDiv.appendChild(courseInput);
         courseDiv.appendChild(deleteBtn);
         coursesDiv.appendChild(courseDiv);
-    });
+    }
+
+    // Attach event listener to the "Add Course" button
+    addCourseBtn.addEventListener("click", addCourseField);
 
     // Handle form submission
     form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent form submission
+        event.preventDefault(); // Prevent default form submission
 
-        // Check required fields
+        // Validate required fields
         const requiredFields = form.querySelectorAll("[required]");
         let allFieldsFilled = true;
         requiredFields.forEach((field) => {
@@ -40,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (!allFieldsFilled) return;
 
-        // Gather form data
+        // Gather form data and display result
         const formData = new FormData(form);
         const result = document.createElement("div");
         result.innerHTML = `
@@ -59,10 +64,10 @@ document.addEventListener("DOMContentLoaded", function () {
             <p>Anything Else: ${formData.get("anythingElse")}</p>
         `;
 
-        // Display result
+        // Replace form with result
         form.replaceWith(result);
 
-        // Load image
+        // Load uploaded image
         const uploadedImage = document.getElementById("uploadedImage");
         const file = formData.get("image");
         if (file) {
@@ -74,11 +79,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Handle reset
+    // Handle form reset
     form.addEventListener("reset", function () {
         coursesDiv.innerHTML = `
             <label>Courses currently taking:</label>
-            <button type="button" id="addCourse">Add Course</button>
         `;
     });
 });
