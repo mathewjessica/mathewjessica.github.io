@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
             nav.appendChild(ul);
             footerElement.appendChild(nav);
             const p = document.createElement("p");      
-            p.innerHTML = `Page Built by <a href="jmdesigns.com/">J.M. Designs</a> &copy; 2024,
+            p.innerHTML = `Page Built by <a href="../jmdesigns.com/">J.M. Designs</a> &copy; 2024,
     <em>
         Certified in <a href= "https://www.freecodecamp.org/certification/jessicamathew/responsive-web-design" target="_new">Responsive Web Design</a>
     </em> 
