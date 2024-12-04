@@ -199,4 +199,82 @@ input, select, button {
     th, td {
         padding: 6px;
     }
+
+    /* Slideshow container */
+.container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border: 5px solid #523A50;
+    border-radius: 10px;
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    position: relative;
+    text-align: center;
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+/* Navigation buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Thumbnails */
+.row {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.column {
+    flex: 0 0 auto;
+    margin: 0 5px;
+}
+
+.demo {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.demo:hover, .demo.active {
+    opacity: 1;
+    border: 2px solid #523A50;
+    border-radius: 5px;
+}
+
 }
