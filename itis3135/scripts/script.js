@@ -4,8 +4,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Fetch and populate the header
     fetch("../data/header.json")
-        .then(response => response.json())
-        .then(headerData => {
+        .then((response) => response.json())
+        .then((headerData) => {
             const headerElement = document.querySelector("header");
             const h1 = document.createElement("h1");
             h1.textContent = headerData.h1;
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const nav = document.createElement("nav");
             const ul = document.createElement("ul");
 
-            headerData.navlinks.forEach(link => {
+            headerData.navlinks.forEach((link) => {
                 const li = document.createElement("li");
                 const divider = document.createElement("span");
                 const a = document.createElement("a");
@@ -29,18 +29,18 @@ document.addEventListener("DOMContentLoaded", () => {
             nav.appendChild(ul);
             headerElement.appendChild(nav);
         })
-        .catch(error => console.error("Error loading header.json:", error));
+        .catch((error) => console.error("Error loading header.json:", error));
 
     // Fetch and populate the footer
     fetch("../data/footer.json")
-        .then(response => response.json())
-        .then(footerLinks => {
+        .then((response) => response.json())
+        .then((footerLinks) => {
             const footerElement = document.querySelector("footer");
             const ul = document.createElement("ul");
             const nav = document.createElement("nav");
 
             
-            footerLinks.navlinks.forEach(link => {
+            footerLinks.navlinks.forEach((link) => {
                 const li = document.createElement("li");
                 const a = document.createElement("a");
                 const divider = document.createElement("span");
@@ -67,5 +67,5 @@ document.addEventListener("DOMContentLoaded", () => {
             footerElement.appendChild(p);
         })
 
-        .catch(error => console.error("Error loading footer.json:", error));
+        .catch((error) => console.error("Error loading footer.json:", error));
 });
