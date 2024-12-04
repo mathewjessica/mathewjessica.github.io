@@ -1,62 +1,137 @@
-function scriptTest() {
-    alert("Hey my script is running");
+const currentdate = new Date();
+const datetime = (currentdate.getMonth() + 1) + "/" +
+    currentdate.getDate() + "/" +
+    currentdate.getFullYear() + " @ " +
+    currentdate.getHours() + ":" +
+    currentdate.getMinutes() + ":" +
+    currentdate.getSeconds();
+const currentDay = currentdate.getDay();
+let actualday;
+
+switch (currentDay) {
+    case 0:
+        actualday = "Sunday";
+        break;
+    case 1:
+        actualday = "Monday";
+        break;
+    case 2:
+        actualday = "Tuesday";
+        break;
+    case 3:
+        actualday = "Wednesday";
+        break;
+    case 4:
+        actualday = "Thursday";
+        break;
+    case 5:
+        actualday = "Friday";
+        break;
+    case 6:
+        actualday = "Saturday";
+        break;
 }
 
-function showCurrentDate() {
-    const now = new Date();
-    const options = { weekday: "long", year: "numeric", month: "long", day: "numeric", hour: "2-digit", minute: "2-digit" };
-    const formattedDate = now.toLocaleDateString("en-US", options);
-    document.getElementById("current-date").textContent = `Today is ${formattedDate}`;
-}
+const companyname = "Jolly Mongoose";
+const dateElement = document.getElementById("current-date");
+dateElement.innerHTML = `Today is ${actualday}, ${datetime}`;
 
+// User Greeting Section
+const greetingMessage = document.getElementById("greeting-message");
+const submitFeelingButton = document.getElementById("user-form").querySelector("button");
 
-function greetUser() {
-    const name = document.getElementById("user-name").value;
-    const mood = document.getElementById("user-mood").value;
-    const greeting = `The Jolly Mongoose welcomes you, ${name}! We're glad you are doing ${mood}!`;
-    document.getElementById("greeting-message").textContent = greeting;
-}
+submitFeelingButton.onclick = function displayGreeting() {
+    let name = document.getElementById("user-name").value;
+    let feeling = document.getElementById("user-mood").value;
 
-function showPolygon() {
-    const num = Math.abs(Math.round(parseFloat(document.getElementById("favorite-number").value)));
-    const polygons = ["monogon", "digon", "triangle", "quadrilateral", "pentagon", "hexagon", "heptagon", "octagon", "nonagon", "decagon"];
-    if (num >= 0 && num <= 10) {
-        alert(`Your polygon is a ${polygons[num]}!`);
+    if (name !== "" && feeling !== "") {
+        greetingMessage.innerHTML = `The ${companyname} welcomes you, ${name}!<br>We're glad you are doing ${feeling}!`;
     } else {
-        alert("Please enter a number between 0 and 10.");
+        greetingMessage.innerHTML = "Please fill out both fields.";
     }
-}
+};
 
-function bakeSavoryCookie() {
-    alert("The Jolly Mongoose baked a savory cookie just for you!");
-}
+// Polygon Finder Section
+const submitPolygonButton = document.querySelector("#favorite-number").nextElementSibling;
 
-function randomCookieFact() {
+submitPolygonButton.onclick = function displayPolygon() {
+    let number = Math.abs(Math.round(Number(document.getElementById("favorite-number").value)));
+    let polygonName;
+
+    switch (number) {
+        case 0:
+            polygonName = "Not a polygon";
+            break;
+        case 1:
+            polygonName = "Monogon";
+            break;
+        case 2:
+            polygonName = "Bigon";
+            break;
+        case 3:
+            polygonName = "Triangle";
+            break;
+        case 4:
+            polygonName = "Quadrilateral";
+            break;
+        case 5:
+            polygonName = "Pentagon";
+            break;
+        case 6:
+            polygonName = "Hexagon";
+            break;
+        case 7:
+            polygonName = "Heptagon";
+            break;
+        case 8:
+            polygonName = "Octagon";
+            break;
+        case 9:
+            polygonName = "Nonagon";
+            break;
+        case 10:
+            polygonName = "Decagon";
+            break;
+        default:
+            polygonName = "Out of range";
+    }
+
+    alert(polygonName);
+};
+
+// Fun Functions Section
+const bakeSavoryCookie = () => {
+    alert("Your savory cookie is baking in the oven!");
+};
+
+const randomCookieFact = () => {
     const facts = [
-        "The first cookie was made in Persia.",
-        "Savory cookies pair well with cheese!",
-        "Cookies were originally used to test oven temperatures.",
+        "Cookies were first invented in 7th century Persia.",
+        "The word 'cookie' comes from the Dutch word 'koekje'.",
+        "The first chocolate chip cookie was created in 1938.",
+        "Americans eat over 2 billion cookies a year.",
+        "The Jolly Mongoose loves savory cookies the most!"
     ];
-    alert(facts[Math.floor(Math.random() * facts.length)]);
-}
+    const randomIndex = Math.floor(Math.random() * facts.length);
+    alert(facts[randomIndex]);
+};
 
-function mongooseAdventure() {
-    alert("The Jolly Mongoose went on an adventure and found the secret to savory cookies!");
-}
+const mongooseAdventure = () => {
+    alert("The mongoose ventures into the wild jungle, ready to face any challenge!");
+};
 
-function cookieTrivia() {
-    const trivia = [
-        "Cookies were brought to America in the 17th century.",
-        "A cookie becomes savory when adding herbs and spices.",
-        "Did you know? A mongoose is also a fan of cookies!",
+const cookieTrivia = () => {
+    alert("Did you know? Cookies are often used to celebrate holidays around the world!");
+};
+
+const recommendCookie = () => {
+    const cookies = [
+        "Chocolate Chip Cookie",
+        "Oatmeal Raisin Cookie",
+        "Peanut Butter Cookie",
+        "Snickerdoodle",
+        "Savory Herb Biscuit"
     ];
-    alert(trivia[Math.floor(Math.random() * trivia.length)]);
-}
-
-function recommendCookie() {
-    const cookies = ["Cheddar-Chive Cookie", "Parmesan Herb Biscuit", "Savory Oatmeal Cracker"];
-    alert(`We recommend trying our ${cookies[Math.floor(Math.random() * cookies.length)]}!`);
-}
-
-
-document.addEventListener("DOMContentLoaded", showCurrentDate);
+    const randomIndex = Math.floor(Math.random() * cookies.length);
+    alert(`Today's recommendation: ${cookies[randomIndex]}`);
+};

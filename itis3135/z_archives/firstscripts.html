@@ -15,15 +15,15 @@
         <h2>First Scripts</h2>
         <h3 id="current-date"></h3>
 
-        <form id="user-input-form">
-            <label for="user-name">Enter your name:</label>
-            <input type="text" id="user-name" required>
-
-            <label for="user-mood">How are you feeling today?</label>
-            <input type="text" id="user-mood" required>
-
+        <form id="user-form">
+            <label for="user-name">Name:</label>
+            <input type="text" id="user-name" placeholder="Your name">
+            <label for="user-mood">Mood:</label>
+            <input type="text" id="user-mood" placeholder="How are you feeling?">
             <button type="button" onclick="greetUser()">Submit</button>
         </form>
+        <p id="greeting-message"></p>
+        
 
         <h3 id="greeting-message"></h3>
 
