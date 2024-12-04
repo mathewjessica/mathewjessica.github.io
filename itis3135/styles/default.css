@@ -267,7 +267,6 @@ input, select, button {
     height: 33px;
     object-fit: cover;
     cursor: pointer;
-    border: 2px solid transparent;
     border-radius: 5px;
     transition: all 0.3s ease; /* Smooth hover effects */
 }
@@ -283,7 +282,7 @@ input, select, button {
     transition: all 0.3s ease; /* Smooth transition for effects */
 }
 
-.image-gallery ul li p.highlight {
+.image-gallery ul li .highlight {
     font-weight: bold; /* Bold font */
     font-size: 1.5em; /* Larger font size */
     color: #FFD700; /* Highlight color */
