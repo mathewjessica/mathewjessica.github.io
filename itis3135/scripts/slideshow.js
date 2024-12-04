@@ -2,7 +2,6 @@ $(document).ready(function () {
     let currentIndex = 0;
     const slides = $(".slide");  // Get all images with the 'slide' class
     const totalSlides = slides.length;  // Get the total number of slides
-
     // Function to show the current slide and update the caption
     function showSlide(index) {
         // Hide all slides initially and remove 'active' class
@@ -25,6 +24,7 @@ $(document).ready(function () {
 
     // Image gallery click event to switch slides
     $(".image-gallery img").click(function () {
+        console.log("Image clicked");
         const clickedIndex = $(this).parent().index();  // Get index of the clicked thumbnail
         currentIndex = clickedIndex;  // Update the current index
         showSlide(currentIndex);  // Show the clicked slide
