@@ -1,45 +1,45 @@
 $(document).ready(function () {
-    let slideIndex = 1; // Start with the first slide
-    showSlides(slideIndex);
+    const images = [
+        { src: "../images/jess.jpg", caption: "J - Jar" },
+        { src: "../images/church.JPG", caption: "M - Money" },
+        { src: "../images/fox.jpg", caption: "F - Fox" },
+        { src: "../images/savory_cookie.jpg", caption: "C - Cookie" }
+        // Add more objects for each letter
+    ];
 
-    // Next/Previous controls
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
+    let currentIndex = 0;
+
+    // Updateslideshow content
+    function updateSlideshow() {
+        const currentImage = images[currentIndex];
+        $("#slideshow img").attr("src", currentImage.src).attr("alt", currentImage.caption);
+        $("#slideshow figcaption").text(currentImage.caption);
     }
 
-    // Thumbnail image controls
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
+    // Initialize slideshow
+    updateSlideshow();
 
-    function showSlides(n) {
-        const slides = $(".mySlides");
-        const dots = $(".demo");
-        const captionText = $("#caption");
-
-        // Loop back to the first slide if at the end
-        if (n > slides.length) slideIndex = 1;
-        if (n < 1) slideIndex = slides.length;
-
-        slides.hide(); // Hide all slides
-        dots.removeClass("active"); // Remove 'active' class from thumbnails
-
-        slides.eq(slideIndex - 1).show(); // Show the current slide
-        dots.eq(slideIndex - 1).addClass("active"); // Highlight the current thumbnail
-        captionText.text(dots.eq(slideIndex - 1).attr("alt")); // Update the caption
-    }
-
-    // Attach click events to buttons
-    $(".prev").click(function () {
-        plusSlides(-1);
+    // Event listeners for navigation buttons
+    $("#next").click(function () {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateSlideshow();
     });
 
-    $(".next").click(function () {
-        plusSlides(1);
+    $("#prev").click(function () {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateSlideshow();
     });
 
-    $(".demo").click(function () {
-        const index = $(".demo").index(this) + 1;
-        currentSlide(index);
+    // Generate and bind thumbnail images
+    images.forEach((image, index) => {
+        const thumbnail = $(`<img class="thumbnail" src="${image.src}" alt="${image.caption}" data-index="${index}">`);
+        $("#thumbnail-list").append(thumbnail);
     });
+
+    // Thumbnail click event
+    $("#thumbnail-list").on("click", ".thumbnail", function () {
+        currentIndex = $(this).data("index");
+        updateSlideshow();
+    });
+    
 });

@@ -10,152 +10,27 @@
 
 <body>
     <header id="header-container"></header>
-
     <main>
-        <h2>Slideshow</h2>
-        <!-- Container for the image gallery -->
-        <div class="container">
-
-            <!-- Full-width images with number text -->
-            <div class="mySlides">
-                <div class="numbertext">1 / 13</div>
-                <img src="../images/ccm_group.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">2 / 13</div>
-                <img src="../images/ccm_group.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">3 / 13</div>
-                <img src="../images/ccm_group.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">4 / 13</div>
-                <img src="../images/ccm_group.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">5 / 13</div>
-                <img src="../images/ccm_group.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">6 / 13</div>
-                <img src="../images/ccm_group.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">6 / 13</div>
-                <img src="../images/ccm_group.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">7 / 13</div>
-                <img src="../images/ccm_group.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">8 / 13</div>
-                <img src="../images/ccm_group.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">9 / 13</div>
-                <img src="../images/ccm_group.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">10 / 13</div>
-                <img src="../images/ccm_group.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">11 / 13</div>
-                  <img src="../images/ccm_group.jpg" style="width:100%">
-              </div>
-
-              <div class="mySlides">
-                <div class="numbertext">12 / 13</div>
-                  <img src="../images/ccm_group.jpg" style="width:100%">
-              </div>
-
-              <div class="mySlides">
-                <div class="numbertext">13 / 13</div>
-                  <img src="../images/ccm_group.jpg" style="width:100%">
-              </div>
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            <!-- Image text -->
-            <div class="caption-container">
-                <p id="caption"></p>
-            </div>
-
-            <!-- Thumbnail images -->
-            <div class="row">
-                <div class="column">
-                    <img class="demo cursor" src="../images/ccm_group.jpg" style="width:100%" onclick="currentSlide(1)"
-                        alt="J">
+        <h2 class="responsive-heading">ITIS 3135 Slideshow Gallery</h2>
+        <p>A slideshow gallery of images corresponding to each letter of my full name</p>
+        <section id="content" class="slideshowpage">
+            <section id="slideshow-container">
+                <div id="slideshow">
+                    <figure>
+                        <!--placeholder-->
+                        <img src="../images/jess.JPG" alt="J for Jessica">
+                        <figcaption>J for Jessica</figcaption>
+                    </figure>
                 </div>
-                <div class="column">
-                    <img class="demo cursor" src="../images/ccm_group.jpg" style="width:100%" onclick="currentSlide(2)"
-                        alt="E">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="../images/ccm_group.jpg" style="width:100%" onclick="currentSlide(3)"
-                        alt="S">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="../images/ccm_group.jpg" style="width:100%" onclick="currentSlide(4)"
-                        alt="S">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="../images/ccm_group.jpg" style="width:100%" onclick="currentSlide(5)"
-                        alt="I">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="../images/ccm_group.jpg" style="width:100%" onclick="currentSlide(6)"
-                        alt="C">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="../images/ccm_group.jpg" style="width:100%" onclick="currentSlide(7)"
-                        alt="A">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="../images/ccm_group.jpg" style="width:100%" onclick="currentSlide(8)"
-                        alt="M">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="../images/ccm_group.jpg" style="width:100%" onclick="currentSlide(9)"
-                        alt="A">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="../images/ccm_group.jpg" style="width:100%" onclick="currentSlide(10)"
-                        alt="T">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="../images/ccm_group.jpg" style="width:100%" onclick="currentSlide(11)"
-                        alt="H">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="../images/ccm_group.jpg" style="width:100%" onclick="currentSlide(12)"
-                        alt="E">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="../images/ccm_group.jpg" style="width:100%" onclick="currentSlide(13)"
-                        alt="W">
-                </div>
-
-
-            </div>
-        </div>
-
+            </section>
+            <section id="controls">
+                <button id="prev">Previous</button>
+                <button id="next">Next</button>
+            </section>
+            <section id="thumbnail-list"></section>
+        </section>
     </main>
+
 
     <footer id="footer-container"></footer>
 
