@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessica Mathew's Jolly Mongoose || ITIS 3135 BYO Intro</title>
+    <link rel="stylesheet" href="../styles/default.css">
+</head>
+
+<body>
+    <header id="header-container"></header>
+    <main>
+        <h2>BOY Intro</h2>
+        <h2>BYO Intro Page</h2>
+        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+    
+        <form id="intro-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+    
+            <label for="mascot">Mascot:</label>
+            <input type="text" id="mascot" name="mascot" required><br>
+    
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" name="image" accept=".png, .jpg" required><br>
+    
+            <label for="image-caption">Image Caption:</label>
+            <input type="text" id="image-caption" name="imageCaption" required><br>
+    
+            <label for="personal-background">Personal Background:</label>
+            <textarea id="personal-background" name="personalBackground" required></textarea><br>
+    
+            <label for="professional-background">Professional Background:</label>
+            <textarea id="professional-background" name="professionalBackground" required></textarea><br>
+    
+            <label for="academic-background">Academic Background:</label>
+            <textarea id="academic-background" name="academicBackground" required></textarea><br>
+    
+            <label for="web-development-background">Background in Web Development:</label>
+            <textarea id="web-development-background" name="webDevelopmentBackground" required></textarea><br>
+    
+            <label for="primary-platform">Primary Computer Platform:</label>
+            <input type="text" id="primary-platform" name="primaryPlatform" required><br>
+    
+            <div id="courses">
+                <label>Courses currently taking:</label>
+                <button type="button" id="add-course">Add Course</button>
+            </div>
+    
+            <label for="funny-thing">Funny Thing:</label>
+            <textarea id="funny-thing" name="funnyThing"></textarea><br>
+    
+            <label for="anything-else">Anything Else:</label>
+            <textarea id="anything-else" name="anythingElse"></textarea><br>
+    
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label><br>
+    
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </main>
+
+    <footer id="footer-container"></footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="../scripts/survey.js"></script>
+    <script src="../scripts/script.js"></script>
+
+</body>
+
+</html>
