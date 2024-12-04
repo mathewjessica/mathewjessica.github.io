@@ -9,9 +9,7 @@
 </head>
 
 <body>
-    <header>
-        <div data-include="../components/header.html"></div>
-    </header>
+    <header id="header-container"></header>
 
     <main>
         <h2>First Scripts</h2>
@@ -41,18 +39,11 @@
         <button onclick="recommendCookie()">Recommend a Cookie</button>
     </main>
 
-    <footer>
-        <div data-include="../components/footer.html"></div>
-        <a id="validation-link-html" href="#">HTML Validator</a>
-        <a id="validation-link-css" href="#">CSS Validator</a>
-    </footer>
+    <footer id="footer-container"></footer>
 
     <script src="../scripts/defaultscripts.js"></script>
-    <script src="../scripts/HTMLInclude.min.js"></script>
-    <script>
-        document.getElementById("validation-link-html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
-        document.getElementById("validation-link-css").setAttribute("href", "https://jigsaw.w3.org/css-validator/check/referer");
-    </script>
+    <script src="../scripts/script.js"></script>
+
 </body>
 
 </html>

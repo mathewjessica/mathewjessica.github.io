@@ -1,0 +1,18 @@
+{
+    "h1": "Jessica Mathew's Jolly Mongoose || ITIS 3135",
+"navlinks":[
+    {"name": "Home", "url": "index.html"},
+    {"name": "Introduction", "url": "../z_archives/introduction.html"},
+    {"name": "Contract", "url": "../z_archives/contract.html"},
+    {"name": "About", "url": "../z_archives/about.html"},
+    {"name": "Tables", "url": "../z_archives/tables.html"},
+    {"name": "Forms", "url": "../z_archives/forms.html"},
+    {"name": "Website Evaluations", "url": "../z_archives/website_evaluations.html"},
+    {"name": "First Scripts", "url": "../z_archives/firstscripts.html"},
+    {"name": "Hobby", "url": "../hobby/index.html"},
+    {"name": "Client Project", "url": "../z_archives/project_overview.html"},
+    {"name": "UNCC CCM", "url": "../client project/index.html"},
+    {"name": "Peer Review 1", "url": "../z_archives/review1.html"},
+    {"name": "Peer Review 2", "url": "../z_archives/review2.html"}
+]
+}
