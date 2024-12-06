@@ -153,27 +153,27 @@ figcaption {
     object-fit: cover;
     cursor: pointer;
     border-radius: 5px;
-    transition: all 0.3s ease; /* Smooth hover effects */
+    transition: all 0.3s ease; 
 }
 
 .image-gallery img:hover {
     border-color: #fff;
-    transform: scale(1.1); /* Slight zoom on hover */
+    transform: scale(1.1); 
 }
 
 .image-gallery ul li p {
-    margin: 5px 0; /* Space around the letter */
+    margin: 5px 0;
     font-size: 1rem;
-    transition: all 0.3s ease; /* Smooth transition for effects */
+    transition: all 0.3s ease; 
 }
 
 .image-gallery ul li .highlight {
-    font-weight: bold; /* Bold font */
-    font-size: 1.5em; /* Larger font size */
-    color: #FFD700; /* Highlight color */
+    font-weight: bold; 
+    font-size: 1.5em; 
+    color: #FFD700; 
 }
 
-/* Button Styles (Optional) */
+
 #controls button {
     background-color: #333;
     color: cornsilk;

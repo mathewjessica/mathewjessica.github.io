@@ -1,8 +1,6 @@
-// script.js
-
 // Function to display current date and time
 function displayDateTime() {
-    const dateElement = document.getElementById('current-date-time'); // Updated ID
+    const dateElement = document.getElementById('current-date-time'); 
     const now = new Date();
     const options = { 
         hour: '2-digit', 
@@ -20,9 +18,9 @@ function displayDateTime() {
 // Function to handle greeting form submission
 function handleGreetingForm(event) {
     event.preventDefault();
-    const name = document.getElementById('user-name').value; // Updated ID
-    const mood = document.getElementById('user-mood').value; // Updated ID
-    const greetingMessage = document.getElementById('greeting-message'); // Updated ID
+    const name = document.getElementById('user-name').value; 
+    const mood = document.getElementById('user-mood').value; 
+    const greetingMessage = document.getElementById('greeting-message'); 
     greetingMessage.innerHTML = `
         <p>The Jolly Mongoose Cookies welcomes you, <strong>${name}</strong>!</p>
         <p>We're glad you are doing <strong>${mood}</strong>!</p>
@@ -32,7 +30,7 @@ function handleGreetingForm(event) {
 // Function to handle favorite number form submission
 function handleNumberForm(event) {
     event.preventDefault();
-    const numberInput = document.getElementById('favorite-number-input'); // Corrected ID
+    const numberInput = document.getElementById('favorite-number-input'); 
     let number = parseFloat(numberInput.value);
     number = Math.round(Math.abs(number));
 
