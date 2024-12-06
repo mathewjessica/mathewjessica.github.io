@@ -28,14 +28,18 @@
 
             <p><i>"Where Students Grow in Faith and Friendship"</i></p>
         </nav>
-    </header> 
+    </header>
 
     <main>
         <h2>Welcome to CCM</h2>
-        <img src="../images/ccm_group.jpg" id ="cookie" alt="Students at CCM">  
+        <h3 id="greeting"></h3>
+
+        <img src="../images/ccm_group.jpg" id="cookie" alt="Students at CCM">
         <figcaption>Students at CCM</figcaption>
-        <p>Our mission is simple: establish a community of students who love the Catholic faith.
-        </p>
+        <p>Our mission is simple: establish a community of students who love the Catholic faith.</p>
+
+        <!-- Bible Verses Section -->
+        <div id="bible-verse"></div> 
     </main>
 
     <footer>
@@ -51,11 +55,13 @@
     </footer>
 
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"> </script>
-
+    <script src="../scripts/greeting.js"></script>
     <script>
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/check/referer");
     </script>
+    <script src="../scripts/verses.js"></script>
+
 </body>
 
 </html>

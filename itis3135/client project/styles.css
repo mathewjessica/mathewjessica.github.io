@@ -200,3 +200,29 @@ figcaption {
 #controls button:hover {
     background-color: #523A50;
 }
+#countdown-timer {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ece0b7;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border: 4px solid #F0EDEE; 
+    border-radius: 10px; 
+    display: inline-block; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    background-color: #246b3f;
+}
+
+#bible-verse {
+
+    font-size: 0.2 em;
+    font-weight: bold;
+    color: #ece0b7;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #246b3f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
+}
