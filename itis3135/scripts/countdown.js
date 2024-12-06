@@ -1,6 +1,9 @@
 // Set the date of the event
 const eventDate = new Date("January 15, 2025 18:30:00").getTime();
 
+// Declare the interval variable at the top
+let interval;
+
 // Function to update the countdown
 function updateCountdown() {
     // Get the current date and time
@@ -27,7 +30,7 @@ function updateCountdown() {
 }
 
 // Update the countdown every 1 second
-const interval = setInterval(updateCountdown, 1000);
+interval = setInterval(updateCountdown, 1000);
 
 // Initialize countdown immediately
 updateCountdown();
