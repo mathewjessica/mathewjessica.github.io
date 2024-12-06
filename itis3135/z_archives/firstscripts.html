@@ -14,31 +14,52 @@
 
     <main>
         <h2>First Scripts</h2>
-        <h3 id="date-display"></h3>
-        <form id="user-form">
-            <label for="user-name">Name:</label>
-            <input type="text" id="user-name" placeholder="Your name">
-            <label for="user-mood">Mood:</label>
-            <input type="text" id="user-mood" placeholder="How are you feeling?">
-            <button type="button" onclick="greetUser()">Submit</button>
-        </form>
-        <p id="greeting-message"></p>
+        <h3 id="current-date-time">Loading date and time...</h3>
 
-        <label for="favorite-number">Favorite Number (0-10):</label>
-        <input type="number" id="favorite-number">
-        <button type="button" onclick="findPolygon()">Get Polygon Name</button>
+        <!-- User Input Form for Name and Mood -->
+        <section id="user-greeting">
+            <h2>Tell Us About Yourself</h2>
+            <form id="greeting-form">
+                <label for="userName">Name:</label>
+                <input type="text" id="user-name" name="userName" required>
 
-        <button onclick="shareFunFact()">Share Fun Fact</button>
-<button onclick="calculateTreats()">Calculate Treats</button>
-<button onclick="inspire()">Inspire</button>
-<button onclick="animalTrivia()">Animal Trivia</button>
-<button onclick="cheerUser()">Cheer You Up</button>
+                <label for="userMood">How are you feeling today?</label>
+                <input type="text" id="user-mood" name="userMood" required>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div id="greeting-message"></div>
+        </section>
+
+        <!-- User Input Form for Favorite Number -->
+        <section id="favorite-number">
+            <h2>Discover Your Polygon!</h2>
+            <form id="number-form">
+                <label for="favorite-numberInput">Enter your favorite number (0-10):</label>
+                <input type="number" id="favorit-number-input" name="favoriteNumberInput" min="0" max="10" required>
+
+                <button type="submit">Find Polygon</button>
+            </form>
+        </section>
+
+        <!-- Buttons for Jolly Mongoose Functions -->
+        <!-- Buttons for Jolly Mongoose Functions -->
+        <section id="mongoose-functions">
+            <h2>Jolly Mongoose Specials</h2>
+            <button id="tell-jolly-joke-btn">Tell a Jolly Joke</button>
+            <button id="get-mongoose-fact-btn">Mongoose Fact</button>
+            <button id="mango-mongoose-btn">Mongoose and Mango</button>
+            <button id="cookie-suggestion-btn">Cookie Suggestion</button>
+            <button id="random-mongoose-action-btn">Random Action</button>
+        </section>
+
 
     </main>
 
     <footer id="footer-container"></footer>
 
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"> </script>
+    <script src="../scripts/defaultscripts.js"></script>
     <script src="../scripts/script.js"></script>
 
 </body>
