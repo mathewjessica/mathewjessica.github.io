@@ -2,7 +2,7 @@
 
 // Function to display current date and time
 function displayDateTime() {
-    const dateElement = document.getElementById('currentDateTime');
+    const dateElement = document.getElementById('current-date-time'); // Updated ID
     const now = new Date();
     const options = { 
         hour: '2-digit', 
@@ -20,9 +20,9 @@ function displayDateTime() {
 // Function to handle greeting form submission
 function handleGreetingForm(event) {
     event.preventDefault();
-    const name = document.getElementById('userName').value;
-    const mood = document.getElementById('userMood').value;
-    const greetingMessage = document.getElementById('greetingMessage');
+    const name = document.getElementById('user-name').value; // Updated ID
+    const mood = document.getElementById('user-mood').value; // Updated ID
+    const greetingMessage = document.getElementById('greeting-message'); // Updated ID
     greetingMessage.innerHTML = `
         <p>The Jolly Mongoose Cookies welcomes you, <strong>${name}</strong>!</p>
         <p>We're glad you are doing <strong>${mood}</strong>!</p>
@@ -32,7 +32,8 @@ function handleGreetingForm(event) {
 // Function to handle favorite number form submission
 function handleNumberForm(event) {
     event.preventDefault();
-    let number = parseFloat(document.getElementById('favoriteNumberInput').value);
+    const numberInput = document.getElementById('favorite-number-input'); // Corrected ID
+    let number = parseFloat(numberInput.value);
     number = Math.round(Math.abs(number));
 
     const polygonNames = [
@@ -131,20 +132,20 @@ window.onload = function() {
     displayDateTime();
 
     // Greeting Form Submission
-    const greetingForm = document.getElementById('greetingForm');
+    const greetingForm = document.getElementById('greeting-form');
     greetingForm.addEventListener('submit', handleGreetingForm);
 
     // Number Form Submission
-    const numberForm = document.getElementById('numberForm');
+    const numberForm = document.getElementById('number-form');
     numberForm.addEventListener('submit', handleNumberForm);
 
     // Update validation links
     updateValidationLinks();
 
     // Attach Event Listeners to Buttons
-    document.getElementById('tellJollyJokeBtn').addEventListener('click', tellJollyJoke);
-    document.getElementById('getMongooseFactBtn').addEventListener('click', getMongooseFact);
-    document.getElementById('mangoMongooseBtn').addEventListener('click', mangoMongoose);
-    document.getElementById('cookieSuggestionBtn').addEventListener('click', cookieSuggestion);
-    document.getElementById('randomMongooseActionBtn').addEventListener('click', randomMongooseAction);
+    document.getElementById('tell-jolly-joke-btn').addEventListener('click', tellJollyJoke);
+    document.getElementById('get-mongoose-fact-btn').addEventListener('click', getMongooseFact);
+    document.getElementById('mango-mongoose-btn').addEventListener('click', mangoMongoose);
+    document.getElementById('cookie-suggestion-btn').addEventListener('click', cookieSuggestion);
+    document.getElementById('random-mongoose-action-btn').addEventListener('click', randomMongooseAction);
 };
