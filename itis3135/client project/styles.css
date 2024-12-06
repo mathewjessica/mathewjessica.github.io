@@ -31,17 +31,6 @@ p{
     color: #F0EDEE;
 }
 
-#validation-link-html img {
-    border: 0;
-    width: 88px;
-    height: 31px;
-}
-
-#validation-link-css img {
-    border: 0;
-    width: 88px;
-    height: 31px;
-}
 
 .leadership {
     display: flex;

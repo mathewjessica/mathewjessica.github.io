@@ -120,13 +120,6 @@ function randomMongooseAction() {
     alert(randomAction);
 }
 
-// Function to update validation links in the footer
-function updateValidationLinks() {
-    const currentURL = window.location.href;
-    document.getElementById('validationLink1').href = `https://validator.w3.org/check?uri=${encodeURIComponent(currentURL)}`;
-    document.getElementById('validationLink2').href = `https://jigsaw.w3.org/css-validator/validator?uri=${encodeURIComponent(currentURL)}`;
-}
-
 // Event Listeners
 window.onload = function() {
     displayDateTime();
@@ -138,9 +131,6 @@ window.onload = function() {
     // Number Form Submission
     const numberForm = document.getElementById('number-form');
     numberForm.addEventListener('submit', handleNumberForm);
-
-    // Update validation links
-    updateValidationLinks();
 
     // Attach Event Listeners to Buttons
     document.getElementById('tell-jolly-joke-btn').addEventListener('click', tellJollyJoke);
