@@ -227,3 +227,23 @@ figcaption {
     transition: all 0.5s ease-in-out;
 }
 
+
+.about-container {
+    background-color: #246b3f; 
+    color: #29524A; 
+    padding: 20px; 
+    margin-top: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    max-width: 900px; 
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: left; 
+}
+
+
+.about-container p {
+    line-height: 1.6; 
+    font-size: 1.1em; 
+    margin-bottom: 15px; 
+}
